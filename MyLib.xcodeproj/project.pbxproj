@@ -16,6 +16,7 @@
 		0459AE3E257F57ED00D46400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0459AE3C257F57ED00D46400 /* Main.storyboard */; };
 		0459AE40257F57EF00D46400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0459AE3F257F57EF00D46400 /* Assets.xcassets */; };
 		0459AE43257F57EF00D46400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0459AE41257F57EF00D46400 /* LaunchScreen.storyboard */; };
+		0459AE49257F6CE200D46400 /* MyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459AE48257F6CE200D46400 /* MyLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		0459AE3F257F57EF00D46400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0459AE42257F57EF00D46400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0459AE44257F57EF00D46400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0459AE48257F6CE200D46400 /* MyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				0459AE19257F54E000D46400 /* MyLib.h */,
 				0459AE1A257F54E000D46400 /* Info.plist */,
+				0459AE48257F6CE200D46400 /* MyLib.swift */,
 			);
 			path = MyLib;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					0459AE15257F54DF00D46400 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 					0459AE1E257F54E000D46400 = {
 						CreatedOnToolsVersion = 11.7;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0459AE49257F6CE200D46400 /* MyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		0459AE2B257F54E000D46400 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = H742LFS4GR;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		0459AE2C257F54E000D46400 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = H742LFS4GR;
@@ -485,6 +493,7 @@
 		0459AE2E257F54E000D46400 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H742LFS4GR;
 				INFOPLIST_FILE = MyLibTests/Info.plist;
@@ -503,6 +512,7 @@
 		0459AE2F257F54E000D46400 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H742LFS4GR;
 				INFOPLIST_FILE = MyLibTests/Info.plist;
